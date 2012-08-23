@@ -14,7 +14,7 @@ CFLAGS += -Iuser/inc -Istm32lib/inc -Ifreertos/inc
 SRCS += user/src/startup_stm32f4xx.s user/src/main.c \
 user/src/stm32f4xx_gpio_config.c user/src/stm32f4xx_rcc_config.c \
 user/src/stm32f4xx_usart_config.c \
-user/src/stm32f4xx_nvic_config.c
+user/src/stm32f4xx_nvic_config.c user/src/simple_task.c
 
 SRCS += stm32lib/src/misc.c stm32lib/src/stm32f4xx_it.c \
 stm32lib/src/stm32f4xx_usart.c \

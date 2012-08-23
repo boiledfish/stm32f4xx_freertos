@@ -30,12 +30,14 @@
 #define __MAIN_H
 
 /* Includes ------------------------------------------------------------------*/
+
 #include "stm32f4xx.h"
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx_gpio_config.h"
 #include "stm32f4xx_rcc_config.h"
 #include "stm32f4xx_usart_config.h"
 #include "stm32f4xx_nvic_config.h"
+#include "simple_task.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

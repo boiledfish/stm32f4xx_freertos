@@ -14,7 +14,6 @@ void Stm32f4xx_GPIO_Config(void)
   GPIO_Init(GPIOD, &GPIO_InitStructure);
 	
   /* 串口配置 */
-  
   GPIO_PinAFConfig(GPIOB, GPIO_PinSource6, GPIO_AF_USART1);
   GPIO_PinAFConfig(GPIOB, GPIO_PinSource7, GPIO_AF_USART1);
   
