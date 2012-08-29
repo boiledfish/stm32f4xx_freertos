@@ -19,7 +19,9 @@ user/src/stm32f4xx_nvic_config.c user/src/simple_task.c
 SRCS += stm32lib/src/misc.c stm32lib/src/stm32f4xx_it.c \
 stm32lib/src/stm32f4xx_usart.c \
 stm32lib/src/stm32f4xx_gpio.c stm32lib/src/stm32f4xx_rcc.c \
-stm32lib/src/system_stm32f4xx.c 
+stm32lib/src/system_stm32f4xx.c \
+stm32lib/src/stm32f4xx_rtc.c stm32lib/src/stm32f4xx_pwr.c \
+stm32lib/src/stm32f4xx_i2c.c
 
 SRCS += freertos/src/heap_2.c freertos/src/list.c freertos/src/port.c \
 freertos/src/queue.c freertos/src/task.c freertos/src/timers.c

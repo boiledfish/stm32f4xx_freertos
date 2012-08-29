@@ -1,0 +1,78 @@
+This README is use of Chinese writing!!!
+------------------------------------------------------------------------------
+这是一个公司的小项目，使用STM32F407VGT6做主控，移植了FreeRTOS。
+未来计划移植FATFS文件系统，DIY一个CLI接口。
+------------------------------------------------------------------------------
+文件夹结构如下(2012-08-23)
+stm32_freertos/
+├── chiperase.sh
+├── configure.sh
+├── freertos
+│   ├── inc
+│   │   ├── croutine.h
+│   │   ├── FreeRTOSConfig.h
+│   │   ├── FreeRTOS.h
+│   │   ├── list.h
+│   │   ├── mpu_wrappers.h
+│   │   ├── portable.h
+│   │   ├── portmacro.h
+│   │   ├── projdefs.h
+│   │   ├── queue.h
+│   │   ├── semphr.h
+│   │   ├── StackMacros.h
+│   │   ├── task.h
+│   │   └── timers.h
+│   └── src
+│       ├── heap_2.c
+│       ├── list.c
+│       ├── port.c
+│       ├── queue.c
+│       ├── task.c
+│       └── timers.c
+├── main.bin
+├── Makefile
+├── README
+├── stm32_flash.ld
+├── stm32lib
+│   ├── inc
+│   │   ├── core_cm4.h
+│   │   ├── core_cm4_simd.h
+│   │   ├── core_cmFunc.h
+│   │   ├── core_cmInstr.h
+│   │   ├── misc.h
+│   │   ├── stm32f4xx_conf.h
+│   │   ├── stm32f4xx_gpio.h
+│   │   ├── stm32f4xx.h
+│   │   ├── stm32f4xx_it.h
+│   │   ├── stm32f4xx_rcc.h
+│   │   ├── stm32f4xx_usart.h
+│   │   └── system_stm32f4xx.h
+│   └── src
+│       ├── misc.c
+│       ├── stm32f4xx_gpio.c
+│       ├── stm32f4xx_it.c
+│       ├── stm32f4xx_rcc.c
+│       ├── stm32f4xx_usart.c
+│       └── system_stm32f4xx.c
+└── user
+    ├── inc
+    │   ├── main.h
+    │   ├── simple_task.h
+    │   ├── stm32f4xx_gpio_config.h
+    │   ├── stm32f4xx_nvic_config.h
+    │   ├── stm32f4xx_rcc_config.h
+    │   └── stm32f4xx_usart_config.h
+    └── src
+        ├── main.c
+        ├── simple_task.c
+        ├── startup_stm32f4xx.s
+        ├── stm32f4xx_gpio_config.c
+        ├── stm32f4xx_nvic_config.c
+        ├── stm32f4xx_rcc_config.c
+        └── stm32f4xx_usart_config.c
+
+9 directories, 56 files
+------------------------------------------------------------------------------
+一些文件说明
+chiperase.sh 使用STLINK擦除全片
+configure.sh 使用STLINK将main.bin文件烧写到片上0x8000000位置

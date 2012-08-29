@@ -29,3 +29,12 @@ void vTask2(void *pvParameters)
       vTaskDelay(500);
     }
 }
+
+void vTask3(void *pvParameters)
+{
+  while(1)
+    {
+      RTC_TimeShow();
+      vTaskDelay(2000);
+    }
+}

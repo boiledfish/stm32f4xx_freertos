@@ -39,6 +39,8 @@
 #include "stm32f4xx_nvic_config.h"
 #include "simple_task.h"
 
+extern void RTC_TimeShow(void);
+
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
